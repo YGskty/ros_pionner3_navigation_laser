@@ -1,4 +1,6 @@
 # ros_pionner3_navigation_laser
+@author:zhw    
+@time:2016-3-17    
 the workspace develped on ros to achieve navigation on pionner3AT robot with sickLMS200 laser
 #分布式系统用法：    
     bbb和pc上跑同一个cakin_ws，唯一需要修改的是 ～/.bashrc 文件    
