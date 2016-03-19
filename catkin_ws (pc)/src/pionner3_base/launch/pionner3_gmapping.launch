@@ -1,0 +1,9 @@
+<launch>
+  <include file="$(find pionner3_base)/launch/includes/laser.launch"/>
+  <include file="$(find pionner3_base)/launch/includes/pionner3_base_teleop.launch"/>
+  <include file="$(find pionner3_base)/launch/includes/tf_publish.launch"/>
+  <include file="$(find pionner3_base)/launch/includes/gmapping.launch"/>
+
+  <!-- rviz -->
+  <node name="rviz" pkg="rviz" type="rviz"/>
+</launch>

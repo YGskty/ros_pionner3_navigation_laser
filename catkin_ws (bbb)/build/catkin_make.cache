@@ -1,0 +1,2 @@
+pionner3_base:rosaria:sicktoolbox_wrapper-indigo-devel
+-DCATKIN_DEVEL_PREFIX=/home/ygskty/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ygskty/catkin_ws/install -G Unix Makefiles

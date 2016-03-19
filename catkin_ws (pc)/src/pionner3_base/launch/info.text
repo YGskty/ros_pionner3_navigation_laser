@@ -1,0 +1,27 @@
+##文档说明##
+#author: zhw
+#time:   2015/12/19
+#content:
+	%1/ pionner3_base_teleop.launch:
+		底层机器人键盘控制模块，驱动pionner3机器人
+	%2/ freenect_start.launch
+		kinect 正常启动模块，启动kinect
+	%3/ freenect_to_laser.launch
+		启动kinect并使其输出激光数据模块，同时加载roscore
+	%4/ gmapping.launch
+		启动gmapping模块用来生成地图
+	%5/ tf_publish.launch
+		坐标发布，转换模块
+
+
+#procedures:
+	$1 generate a map --> pionner3_gmapping.launch
+		1/ freenect_to_laser.launch
+		2/ pionner3_base_teleop.launch
+		3/ tf_publish.launch
+		4/ gmapping.launch
+		5/ $rosrun map_server map_saver  in a new terminal
+
+	$2 use the map to do navigation --> pionner3_navigation.launch
+		1/
+		2/

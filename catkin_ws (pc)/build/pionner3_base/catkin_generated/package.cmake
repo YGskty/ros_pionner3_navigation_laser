@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "pionner3_base")
+set(pionner3_base_MAINTAINER "ygskty <ygskty@todo.todo>")
+set(pionner3_base_DEPRECATED "")
+set(pionner3_base_VERSION "0.0.0")
+set(pionner3_base_BUILD_DEPENDS "geometry_msgs" "rosaria" "roscpp" "rospy" "std_msgs")
+set(pionner3_base_RUN_DEPENDS "geometry_msgs" "rosaria" "roscpp" "rospy" "std_msgs")
+set(pionner3_base_BUILDTOOL_DEPENDS "catkin")

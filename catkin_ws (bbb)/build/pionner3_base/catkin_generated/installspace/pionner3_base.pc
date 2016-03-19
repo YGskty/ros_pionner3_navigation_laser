@@ -1,0 +1,8 @@
+prefix=/home/ygskty/catkin_ws/install
+
+Name: pionner3_base
+Description: Description of pionner3_base
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ygskty/catkin_ws/install/lib 
+Requires: 

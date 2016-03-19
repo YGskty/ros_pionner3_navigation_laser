@@ -1,0 +1,19 @@
+<launch>
+  <!--<include file="$(find pionner3_base)/launch/includes/laser.launch"/>-->
+  <!-- <include file="$(find pionner3_base)/launch/includes/pionner3_base_teleop.launch"/>-->
+  <include file="$(find pionner3_base)/launch/includes/tf_publish.launch"/>
+
+  <!-- Map server -->
+  <arg name="map_file" default="$(find pionner3_base)/maps/zoulang.pgm"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file) 0.05" />
+
+  <!-- amcl -->
+  <include file="$(find pionner3_base)/launch/includes/amcl.launch"/>
+
+  <!-- move_base -->
+  <include file="$(find pionner3_base)/launch/includes/move_base.launch"/>
+
+  <!-- rviz -->
+  <node name="rviz" pkg="rviz" type="rviz"/>
+
+</launch>
