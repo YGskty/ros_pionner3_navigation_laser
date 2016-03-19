@@ -9,6 +9,6 @@ the workspace develped on ros to achieve navigation on pionner3AT robot with sic
 	        export ROS_MASTER_URI=http://192.168.191.4:11311  #跑主节点的url    
 
             ## bbb上面添加：    
-              	export ROS_HOSTNAME=192.168.191.3     #bbb的IP    
+            export ROS_HOSTNAME=192.168.191.3     #bbb的IP    
 	        export ROS_MASTER_URI=http://192.168.191.4:11311  #跑主节点的url      
 
